@@ -1,0 +1,120 @@
+body{
+	font-family: sans-serif;
+	background-color: tan;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+
+	width: 400px;
+	height: 600px;
+	background-color: #212121;
+	border-radius:20px;
+}
+
+
+.output-container{
+	display: flex;
+	flex-direction: column;
+
+	width:350px;
+	height: 100px;
+	background-color: #3B3B3B;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+
+	text-align: right;
+
+	font-size: 24px;
+	font-weight: 700;
+
+	border-radius: 10px;
+
+}
+
+.input-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5px;
+
+	width: 350px;
+	height: 430px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+	border-radius: 10px;
+
+}
+
+
+.equationInput, .result{
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.equationInput{
+	color: #60A07F;
+}
+.result{
+	color: white;
+}
+
+.button{
+
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	font-size: 24px;
+    font-weight: 700;
+    background: #616161;
+    border: 0px solid transparent;
+    border-radius: 100%;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
+    color: #DFDFDF;
+    cursor: pointer;
+
+    text-align: center;
+	transition: all .15s ease-in-out;
+}
+
+
+.equals:hover{
+	background: lightgreen;
+	color: white;
+	transform: translateY(-0.2rem);
+}
+
+.operators:hover{
+	background: mediumturquoise;
+	color: #000;
+	transform: translateY(-0.2rem);
+}
+
+.numAndDecimal:hover{
+	background: #bdbdbd;
+	color: #212121;
+	transform: translateY(-0.2rem);
+}
+
+.clearBtns:hover{
+	background: lightcoral;
+	color: #000;
+	transform: translateY(-0.2rem);
+}
+
+.numAndDecimal:active,
+.operators:active,
+.clearBtns:active,
+.equals:active{
+	transform: translateY(0rem);
+}
